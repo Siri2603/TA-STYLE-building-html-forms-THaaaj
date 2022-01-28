@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
-</head>
-<body>
-    <main>
-        <article>
-            <div class="container">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>HTML forms Ass1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/stylesheet/style.css">
+    </head>
+    <body>
+        <main class="container flex">
+            <div class="col1">
                 <h1>Learn to code by watching others</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut erat tempor, scelerisque nunc ut, ullamcorper odio.</h2>
+                <p>See how experiencied developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
             </div>
-        </article>
-        <section>
-            <div>
-                <p>try it free 7days then $20/mo. thereafter</p>
+            <div class="col1">
+                <div class="box">
+                    <strong>Try it free 7 days</strong> then $20/mo. thereafter
+                </div>
+                <form action="index.html" method="POST">
+                    <fieldset>
+                        <label>
+                            <input class="demoform" type="text" name="first-name" placeholder="First Name">
+                        </label>
+                        <label>
+                            <input class="demoform" type="text" name="last-name" placeholder="Last Name">
+                        </label>
+                        <label>
+                            <input class="demoform" type="email" name="email" placeholder="Email Address">
+                        </label>
+                        <label>
+                            <input class="demoform" type="password" name="password" placeholder="Password">
+                        </label>
+                        <input class="button" type="submit" name="submit" value="Claim your free trial">
+                        <p>By clicking the button you are agreeing to our <a href="#">Terms and Services</a></p>
+                    </fieldset>
+                </form>
             </div>
-            <div>
-                
-            </div>
-        </section>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
